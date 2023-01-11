@@ -32,7 +32,8 @@ router.post('/drones/create', async (req, res, next) => {
     res.redirect('/drones');
   } catch (error) {
     //next(error);
-    res.redirect('/drones/create')
+    //res.redirect('/drones/create')
+    res.render('create-form')
   }
 });
 
@@ -58,7 +59,9 @@ router.post('/drones/:droneId/edit', async (req, res, next) => {
     res.redirect('/drones');
   } catch (error) {
     //next(error);
-    res.redirect(`/drones/${droneId}/edit`)
+    //res.redirect(`/drones/${droneId}/edit`)
+    const droneById = await Drone.findById(droneId);
+    res.render('update-form', droneById);
   }
 });
 
