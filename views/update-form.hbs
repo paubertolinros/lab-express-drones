@@ -1,16 +1,18 @@
-<h2>Editing {{name}} Drone </h2>
+<h2 class="editing-new-title"> Editing  {{name}} Drone </h2>
 <div class="form-container">
   <form class="form-box" method="POST" action="/drones/{{_id}}/edit">
-    <label> Image </label>
-    <input type="text" name="image" value="{{image}}" required/>
-    <label> Dron name </label>
-    <input type="text" name="name" value="{{name}}" required/>
-    <label> Propollers Number </label>
-    <input type="text" name="propellers" value="{{propellers}}" required/>
-    <label> Max Speed </label>
-    <input type="text" name="maxSpeed" value="{{maxSpeed}}" required/>
+    <div class="form-body">
+      <label> Image </label>
+      <input type="text" name="image" value="{{image}}" required/>
+      <label> Dron name </label>
+      <input type="text" name="name" value="{{name}}" required/>
+      <label> Propollers Number </label>
+      <input type="text" name="propellers" value="{{propellers}}" required/>
+      <label> Max Speed </label>
+      <input type="text" name="maxSpeed" value="{{maxSpeed}}" required/>
+    </div>
     <div class="form-button">
-      <button type="submit">Update!</button>
+      <button class="button-click" type="submit">Update!</button>
     </div>
   </form>
 </div>

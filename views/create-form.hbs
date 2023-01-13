@@ -1,15 +1,18 @@
+<h2 class="editing-new-title">Add new Drone </h2>
 <div class="form-container">
   <form class="form-box" method="POST" action="/drones/create">
-    <label> Image </label>
-    <input type="text" name="image" placeholder="https://..." required>
-    <label> Dron name </label>
-    <input type="text" name="name" placeholder="Max Dron Hetel" required>
-    <label> Propollers Number </label>
-    <input type="text" name="propellers" placeholder="4" required>
-    <label> Max Speed </label>
-    <input type="text" name="maxSpeed" placeholder="12" required>
-  <div class="form-button">
-    <button type="submit">Create!</button>
-  </div>
+    <div class="form-body">
+      <label> Image </label>
+      <input type="text" name="image" placeholder="https://..." required>
+      <label> Dron name </label>
+      <input type="text" name="name" placeholder="Max Dron Hetel" required>
+      <label> Propollers Number </label>
+      <input type="text" name="propellers" placeholder="4" required>
+      <label> Max Speed </label>
+      <input type="text" name="maxSpeed" placeholder="12" required>
+    </div>
+    <div class="form-button">
+      <button class= "button-click" type="submit">Create!</button>
+    </div>
   </form>
 </div>

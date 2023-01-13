@@ -1,12 +1,22 @@
+<section class="main-list-page">
 {{#each drones}}
-<div class="dron-image-container">
-  <img src={{image}} alt={{name}}>
-</div>
-<div class="info-dron-container">
-  <h2 class="dron-name">{{name}}</h2>
-  <p class="dron-info">{{propellers}}</p>
-  <p class="dron-info">{{maxSpeed}}</p>
-  <a href="/drones/{{id}}/edit">Edit Drone</a>
-  <form action="/drones/{{id}}/delete" method="POST"> <button>Delete Drone</button> </form>
-</div>
-{{/each}}
+<section class="drones-info-container">
+    <div class="dron-image-container">
+      <img src={{image}} alt={{name}}>
+    </div>
+    <div class="info-dron-container">
+      <h4 class="dron-name"> {{name}}</h4>
+      <section class="info-container">
+        <p class="dron-info"> Propellers - {{propellers}}</p>
+        <p class="separator"> | </p>
+        <p class="dron-info"> Max Speed - {{maxSpeed}}</p>
+      </section>
+      <section class="buttons-info-container">
+        <button class="button-click"><a href="/drones/{{id}}/edit">Edit Drone</a></button>
+        <form action="/drones/{{id}}/delete" method="POST"> <button class="button-click">Delete Drone</button></form>
+      </section>
+    </div>
+  </section>
+  {{/each}}
+</section>
+

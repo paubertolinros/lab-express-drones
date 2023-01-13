@@ -4,13 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
   <title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/reset.css" />
   <link rel="stylesheet" href="/stylesheets/style.css"/>
 </head>
 <body>
-  <a href="/"> Home </a>
-  <a href="/drones"> Drones </a>
-  <a href="/drones/create"> New Drone </a>
-  {{{body}}}
+  <header class="header-container">
+    <section class="logo-container">
+      <a href="/"><img class="logo" src="/images/drone-logo.png" alt="logo"></a>
+    </section>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/drones">All Drones</a></li>
+      <li><a href="/drones/create">New Drone</a></li>
+    </ul>
+  </header>
+    {{{body}}}
 </body>
 </html>
